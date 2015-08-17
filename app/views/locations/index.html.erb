@@ -48,7 +48,7 @@
 	function httpGet() {
 		var xmlHttp = new XMLHttpRequest();
 		//xmlHttp.open("GET", "https://immense-taiga-3572.herokuapp.com/locations.json", false);
-		xmlHttp.open("GET", "http://localhost:3000/locations.json" + location.search, false);
+		xmlHttp.open("GET", "locations.json" + location.search, false);
 		xmlHttp.send(null);
 		return xmlHttp.responseText;
 	}

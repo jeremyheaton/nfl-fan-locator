@@ -69,12 +69,12 @@
 		marker = new google.maps.Marker({
 			position : new google.maps.LatLng(locations[i].latitude, locations[i].longitude),
 			map : map,
-			title : locations[i].name + "  " + + locations[i].email
+			title : locations[i].name + "  " + locations[i].email
 		});
 
 		google.maps.event.addListener(marker, 'click', (function(marker, i) {
 			return function() {
-				infowindow.setContent(locations[i].name + "   "  + + locations[i].email);
+				infowindow.setContent(locations[i].name + "   "  + locations[i].email);
 				infowindow.open(map, marker);
 			}
 		})(marker, i));
